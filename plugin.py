@@ -429,7 +429,7 @@ class BasePlugin:
             self.moonset = data["set"]
             self.sunrise = data["rise"]
             self.sunset = data["set"]
-            self.moonage = round(self.fraction*0.03386319269)) # 28 days or so
+            self.moonage = round(self.fraction*0.03386319269) # 28 days or so
             Domoticz.Debug(s)
             s = '### Moon Local @ %s: sunrise:%s sunset:%s moonrise:%s moonset:%s' % (testDate,data["sunrise"].strftime('%Y-%m-%d %H:%M:%S'),
             data["sunset"].strftime('%Y-%m-%d %H:%M:%S'), moonTimes["rise"].strftime('%Y-%m-%d %H:%M:%S'),
